@@ -1,0 +1,155 @@
+:root {
+  --building-color: #FF9800;
+  --house-color: #0288D1;
+  --shop-color: #7B1FA2;
+  --warehouse-color: #558B2F;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.markerDeg {position:absolute;margin:0px 0 0 20px;color:#000000; font-weight:700}
+.marker-ico {position:absolute;width:18px;margin:23px 0 0 20px}
+.marker-icosun {position:absolute;width:15px;margin:20px 0 0 20px}
+.markerName {position:absolute;margin:48px 0 0 4px;color:#000000; font-weight:700;width:80px}
+
+.property {
+  transition: all 0.3s ease-out;
+}
+
+.property::after {
+  transition: all 0.3s ease-out;
+}
+
+/*
+ * Property styles in unhighlighted state.
+ */
+/*
+.property {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #263238;
+  display: flex;
+  font-size: 14px;
+  gap: 15px;
+  height: 30px;
+  justify-content: center;
+  padding: 4px;
+  position: relative;
+  position: relative;
+  transition: all 0.3s ease-out;
+  width: 30px;
+}
+
+.property::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid #FFFFFF;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 95%;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease-out;
+  width: 0;
+  z-index: 1;
+}
+*/
+
+.property .details {
+  	display: none;
+	padding:0 0 20px 0;
+}
+
+.property .but {
+	width:217px;
+	height:34px;
+	font-size:15px;
+	font-weight:700;
+	color:#FFFFFF;
+	background: #8EAA6E 0% 0% no-repeat padding-box;
+	border-radius: 5px;
+	opacity: 1;
+	text-align:center;
+	margin:0 auto;
+}
+
+.property .address {
+  color: #404A53;
+  font-size: 13px;
+  margin:5px 0 10px 0;
+  height:auto;
+  width:100%;
+  text-align:center
+}
+
+.property .name {
+  color: #404A53;
+  font-size: 16px;
+  font-weight:bold;
+  text-align:center;
+  width:100%;
+}
+.property .close{
+	position:absolute;right:0;
+	margin:-10px 10px 0 0;
+}
+/*
+ * Property styles in highlighted state.
+ */
+.property.highlight {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  width:266px;
+  height:auto;
+  padding: 18px 15px 0 15px;
+  margin:-40px 0 0 -30px;
+  position:absolute;
+  z-index:200000000000 !important;
+  
+}
+
+.property.highlight::after {
+  border-top: 9px solid #FFFFFF;
+}
+
+.property.highlight .details {
+  display: block;
+}
+
+.property.highlight .icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.conditions {
+	border-top: 1px solid #C1C1C1;
+	display: flex;align-items:center;justify-content: center;
+	margin:0 auto;
+	padding:5px 0 0 0;
+	width:217px
+}
+
+.conditions .condition_C {
+  color: #404A53;
+  font-size: 13px;
+  margin:5px 0 10px 0;
+}
+
+.conditions .deg_C {
+  color: #404A53;
+  font-size: 13px;
+  margin:5px 0 10px 0;
+}
+
+.conditions .icon_C1 {
+  margin:-3px 0 0px 0;
+}
+
+.icon_C {
+  	height: 29px !important;
+}
