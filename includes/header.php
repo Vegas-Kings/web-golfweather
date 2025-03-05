@@ -87,7 +87,7 @@
 	$dirCount = substr_count($curpageMain,"/");
 	
 	if(strlen(strpos($_SERVER['HTTP_HOST'], "localhost")) > 0 || strlen(strpos($_SERVER['HTTP_HOST'], "fusia.co.za")) > 0 || strlen(strpos($_SERVER['HTTP_HOST'], "69.48.142.81")) > 0){
-		for($d=1;$d<=$dirCount;$d++){ $dirAdj .= '../'; }
+		for($d=1;$d<=$dirCount;$d++){ $dirAdj .= '../golfweather-v2/'; }
 	}else{
 		$dirAdj = '/';
 	}
@@ -748,12 +748,12 @@ function buildContent(property) {
 </div>
 <div class="mobidiv mt10 mobile-header-container">
 	<div class="container-sm">
-	  <header class="">
-	    <div class="row" >
-	      <div class="col-4 mb5"><a href="<?php echo $dirAdj;?>index.php"><img src="<?php echo $dirAdj;?>img/Golfweather_Logo.png" class="gw_logo" /></a></div>
-	      <div class="ps-1" style="float:left;width:27%;"><a href="https://play.google.com/store/apps/details?id=com.fontera.golfweather&hl=en" target="_blank"><img src="<?php echo $dirAdj;?>img/icons/googleplay.svg" style="margin:14px 0 0 0;"  /></a></div>
-	      <div class="ps-1" style="float:left;width:27%;"><a href="https://itunes.apple.com/app/golfweather.com/id460006449?mt=8" target="_blank"><img src="<?php echo $dirAdj;?>img/icons/appleplay.svg" style="margin:14px 0 0 0;" /></a></div>
-	      <div class="flex" style="float:left;width:12%;"><img src="<?php echo $dirAdj;?>img/icons/burger.svg" style="vertical-align: middle;" onclick="doMobMenu();" /></a></div>
+	  <header class="mobile-header-wrapper">
+	    <div class="row">
+	      <div class="mb5 logo-container"><a href="<?php echo $dirAdj;?>index.php"><img src="<?php echo $dirAdj;?>img/Golfweather_Logo.png" class="gw_logo" /></a></div>
+	      <div class="ps-1 app-image-container"><a href="https://play.google.com/store/apps/details?id=com.fontera.golfweather&hl=en" target="_blank"><img src="<?php echo $dirAdj;?>img/icons/googleplay.svg" /></a></div>
+	      <div class="ps-1 app-image-container"><a href="https://itunes.apple.com/app/golfweather.com/id460006449?mt=8" target="_blank"><img src="<?php echo $dirAdj;?>img/icons/appleplay.svg" /></a></div>
+	      <div class="flex burger-menu-container"><img src="<?php echo $dirAdj;?>img/icons/burger.svg" style="vertical-align: middle;" onclick="doMobMenu();" /></a></div>
 	    </div>
 	  </header>
 	</div>
