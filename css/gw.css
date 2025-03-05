@@ -3101,6 +3101,34 @@ h6 {
   }
 }
 
+@media screen and (max-width: 768px) {
+
+  /* @johan-vk*/
+  .mobidiv {
+    display: block;
+  }
+
+  header.mobile-header-wrapper div.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 0.6fr;
+    justify-content: center;
+  }
+
+  header.mobile-header-wrapper div.row img {
+    width: 100%;
+  }
+
+  header.mobile-header-wrapper div.row div.burger-menu-container img {
+    max-width: 45px;
+    margin-left: auto;
+  }
+
+  footer.deskcontainer {
+    display: none;
+  }
+}
+
 @media (max-width: 799px) {
 
   .ui-autocomplete {
@@ -3626,11 +3654,6 @@ h6 {
     display: none;
   }
 
-  /* @johan-vk*/
-  .mobidiv {
-    display: block;
-  }
-
   .forecastInfo {
     width: 100%;
     padding-bottom: 20px
@@ -3944,6 +3967,10 @@ datalist {
   .clockmob {
     position: absolute;
     margin: -53px 0 0 89px;
+  }
+
+  header.mobile-header-wrapper div.row div.burger-menu-container img {
+    width: 32px;
   }
 }
 
