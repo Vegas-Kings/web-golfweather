@@ -555,6 +555,7 @@ option:hover {
 .forecast-feature-wrapper {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 /* new wrapper added for better responsive on ipad pro size @johan-vk*/
@@ -564,7 +565,7 @@ option:hover {
 }
 
 .flexible-width2 {
-  flex: 2;
+  width: 100%;
   /* Stretch to occupy remaining width i.e. flex-grow: 1 and flex-shrink: 1*/
 }
 
@@ -1130,10 +1131,10 @@ input:focus {
 
 /* justify block content @johan-vk*/
 
-img.cover-img {
+/* img.cover-img {
   position: relative;
   top: 10px;
-}
+} */
 
 .bigTemp {
   margin: 0 0 0 39px;
@@ -1663,19 +1664,20 @@ img.cover-img {
   display: flex;
   height: 268px;
   overflow: hidden;
+  column-gap: 20px;
 }
 
 .botnewsA1 {
   position: relative;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 0;
   overflow: hidden;
 }
 
 .botnewsA2 {
   position: relative;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 0;
   overflow: hidden;
 }
 
@@ -1687,6 +1689,7 @@ img.cover-img {
 
 .botnewsA3 {
   width: 298px;
+  margin-top: 10px;
 }
 
 .mainNewsOver {
@@ -3105,7 +3108,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width:450px) and (max-width: 768px) {
 
   /* @johan-vk*/
   .mobidiv {
@@ -3133,11 +3136,30 @@ h6 {
   }
 
   .search_home {
-    width: 400px;
+    width: 400px !important;
   }
 }
 
 @media (max-width: 799px) {
+  .mobidiv {
+    display: block;
+  }
+
+  header.mobile-header-wrapper div.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr .6fr .6fr 0.8fr;
+    justify-content: center;
+  }
+
+  header.mobile-header-wrapper div.row img {
+    width: 100%;
+  }
+
+  header.mobile-header-wrapper div.row div.burger-menu-container img {
+    max-width: 30px;
+    margin-left: auto;
+  }
 
   .ui-autocomplete {
     width: 94.8% !important
@@ -3787,7 +3809,7 @@ h6 {
     margin-left: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 18px;
-    margin-bottom: 48px;
+    margin-bottom: 0px;
   }
 
   /* show home featured courses @johan-vk*/

@@ -178,7 +178,7 @@
 			</div>
 			<?php }?>
 		</div>
-		<div class="fixed-width home-featured-courses"> <!-- added class to identify @johan-vk -->
+		<div class="fixed-width home-featured-courses">
 			<div class="normhead pt20 featbot"><span class="green">Featured</span> Courses</div>
 			<?php
 				$getQuerySummary = "
@@ -258,6 +258,93 @@
 			?>
 			&nbsp;
 		</div>
+		<div class="flexible-width2">
+			<div class="normhead pt20 featbot" style="width:100%"><span class="green">Latest</span> Golf News</div>
+		</div>
+		<div class="botnewsA pt20">
+			<?php if(isset($news5Home[0]['commentDate'])){?>
+			<div class="botnewsA1">
+				<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[0]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[0]['newsId'];?>';">
+					<div class="botNewsAIco">
+						<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
+					</div>
+					<div class="botNewsATXT">
+						<?php echo $news5Home[0]['heading']?><br />
+						<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[0]['commentDate']))?></span>
+					</div>
+					<div class="mainNewsOver">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<?php }?>
+			<?php if(isset($news5Home[1]['commentDate'])){?>
+			<div class="botnewsA2">
+				<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[1]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[1]['newsId'];?>';">
+					<div class="botNewsAIco">
+						<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
+					</div>
+					<div class="botNewsATXT">
+						<?php echo $news5Home[1]['heading']?><br />
+						<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[1]['commentDate']))?></span>
+					</div>
+					<div class="mainNewsOver">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<?php }?>
+		</div>
+		<div class="botnewsB pt20">
+			<?php if(isset($news5Home[2]['commentDate'])){?>
+			<div class="botnewsB1">
+				<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[2]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[2]['newsId'];?>';">
+					<div class="botNewsAIco">
+						<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
+					</div>
+					<div class="botNewsATXT">
+						<?php echo $news5Home[2]['heading']?><br />
+						<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[2]['commentDate']))?></span>
+					</div>
+					<div class="mainNewsOver">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<?php }?>
+			<?php if(isset($news5Home[3]['commentDate'])){?>
+			<div class="botnewsB2">
+				<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[3]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[3]['newsId'];?>';">
+					<div class="botNewsAIco">
+						<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
+					</div>
+					<div class="botNewsATXT">
+						<?php echo $news5Home[3]['heading']?><br />
+						<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[3]['commentDate']))?></span>
+					</div>
+					<div class="mainNewsOver">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<?php }?>
+			<?php if(isset($news5Home[4]['commentDate'])){?>
+			<div class="botnewsB3">
+				<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[4]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[4]['newsId'];?>';">
+					<div class="botNewsAIco">
+						<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
+					</div>
+					<div class="botNewsATXT">
+						<?php echo $news5Home[4]['heading']?><br />
+						<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[4]['commentDate']))?></span>
+					</div>
+					<div class="mainNewsOver">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+			<?php }?>
+		</div>
 	</div>
 	<div class="fixed-width bannersd">
 		<div class="pt20"><a href=""><img src="img/banners/tag_watch_mobile.webp" class="banner_full" /></a><div id="txt" class="clock"></div></div>
@@ -265,108 +352,10 @@
 		<div class="pt10"><a href=""><img src="img/banners/appleapp_banner.webp" class="banner_full" /></a></div>
 		<div class="pt10"><a href=""><img src="img/banners/googleapp_banner.webp" class="banner_full" /></a></div>
 		<div class="pt10"><a href=""><img src="img/banners/banner3.webp" class="banner_full" /></a></div>
-	</div>
-</main>
-<main class="container deskcontainer mu60">
-	<div class="flexible-width2">
-		<div class="normhead pt20 featbot" style="width:100%"><span class="green">Latest</span> Golf News</div>
-	</div>
-	<div class="fixed-width"></div>
-</main>
-<main class="container deskcontainer">
-	<div class="botnewsA pt20">
-		<?php if(isset($news5Home[0]['commentDate'])){?>
-		<div class="botnewsA1">
-			<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[0]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[0]['newsId'];?>';">
-				<div class="botNewsAIco">
-					<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
-				</div>
-				<div class="botNewsATXT">
-					<?php echo $news5Home[0]['heading']?><br />
-					<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[0]['commentDate']))?></span>
-				</div>
-				<div class="mainNewsOver">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-		<?php }?>
-		<?php if(isset($news5Home[1]['commentDate'])){?>
-		<div class="botnewsA2">
-			<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[1]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[1]['newsId'];?>';">
-				<div class="botNewsAIco">
-					<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
-				</div>
-				<div class="botNewsATXT">
-					<?php echo $news5Home[1]['heading']?><br />
-					<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[1]['commentDate']))?></span>
-				</div>
-				<div class="mainNewsOver">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-		<?php }?>
 		<div class="botnewsA3">
 			<a href=""><img src="img/banners/banner2.webp" class="banner_full" /></a>
 		</div>
 	</div>
-</main>
-<main class="container deskcontainer">
-	<div class="botnewsB pt20">
-		<?php if(isset($news5Home[2]['commentDate'])){?>
-		<div class="botnewsB1">
-			<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[2]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[2]['newsId'];?>';">
-				<div class="botNewsAIco">
-					<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
-				</div>
-				<div class="botNewsATXT">
-					<?php echo $news5Home[2]['heading']?><br />
-					<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[2]['commentDate']))?></span>
-				</div>
-				<div class="mainNewsOver">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-		<?php }?>
-		<?php if(isset($news5Home[3]['commentDate'])){?>
-		<div class="botnewsB2">
-			<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[3]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[3]['newsId'];?>';">
-				<div class="botNewsAIco">
-					<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
-				</div>
-				<div class="botNewsATXT">
-					<?php echo $news5Home[3]['heading']?><br />
-					<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[3]['commentDate']))?></span>
-				</div>
-				<div class="mainNewsOver">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-		<?php }?>
-		<?php if(isset($news5Home[4]['commentDate'])){?>
-		<div class="botnewsB3">
-			<div class="newsImgBig" style="background-image: url(system-files/<?php echo $news5Home[4]['headlineImg'];?>)" onclick="javascript:location.href='news-detail.php?newsId=<?php echo $news5Home[4]['newsId'];?>';">
-				<div class="botNewsAIco">
-					<img src="img/icons/gw_logo_sml2x.png" class="cover-img" />
-				</div>
-				<div class="botNewsATXT">
-					<?php echo $news5Home[4]['heading']?><br />
-					<span class="newsDate"><?php echo date('d M Y', strtotime($news5Home[4]['commentDate']))?></span>
-				</div>
-				<div class="mainNewsOver">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-		<?php }?>
-		<div class="botnewsB4">
-			&nbsp;
-		</div>
-	</div>
-	<div style="clear:both"></div>
 </main>
 
 <div class="mobidiv mobile-layout-container">
@@ -597,3 +586,5 @@
 	require_once("includes/footer.php");
 ?>            
 
+12:44 2025/03/10	`\	Z
++- `
