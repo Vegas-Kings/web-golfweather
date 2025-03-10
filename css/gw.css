@@ -519,8 +519,13 @@ option:hover {
 .cover_top {
   position: relative;
   width: auto;
+  min-height: 400px;
   margin: 0 auto;
-  text-align: center
+  text-align: center;
+  background: url(../img/golf_weather_dt.webp) no-repeat 50% 0 / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-width {
@@ -563,15 +568,14 @@ option:hover {
   /* Stretch to occupy remaining width i.e. flex-grow: 1 and flex-shrink: 1*/
 }
 
-.cover_child {
+/* .cover_child {
   width: 100%;
   height: 130px;
   background-color: transparent;
-  /* Center vertically */
   position: absolute;
   top: 35%;
   text-align: center;
-}
+} */
 
 .search_home {
   color: #000000;
@@ -2800,9 +2804,9 @@ h6 {
     margin: 27px 0 5px 15px;
   }
 
-  .cover_child {
+  /* .cover_child {
     top: 25%;
-  }
+  } */
 
 
   .fcName {
@@ -3111,7 +3115,7 @@ h6 {
   header.mobile-header-wrapper div.row {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 0.6fr;
+    grid-template-columns: 1fr .6fr .6fr 0.8fr;
     justify-content: center;
   }
 
@@ -3120,12 +3124,16 @@ h6 {
   }
 
   header.mobile-header-wrapper div.row div.burger-menu-container img {
-    max-width: 45px;
+    max-width: 30px;
     margin-left: auto;
   }
 
   footer.deskcontainer {
     display: none;
+  }
+
+  .search_home {
+    width: 400px;
   }
 }
 
@@ -3830,27 +3838,27 @@ h6 {
     height: 283px;
     /* opera */
     overflow: hidden;
-    background-image: url(../img/header_background_mobile.webp);
+    background-image: url(../img/golf_weather_dt.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  .cover_child {
+  /* .cover_child {
     width: 100%;
     height: 130px;
     background-color: transparent;
-    /* Center vertically */
     position: absolute;
     top: 24%;
     text-align: center;
-  }
+  } */
 
   .cover_head {
     font-weight: bold;
     font-size: 38px;
     line-height: 38px;
-    padding: 0 10px 0 10px
+    padding: 0 10px 0 10px;
+    white-space: break-spaces;
   }
 
   .search_home {
@@ -3967,6 +3975,15 @@ datalist {
   .clockmob {
     position: absolute;
     margin: -53px 0 0 89px;
+  }
+
+  .cover_top {
+    background-image: url(../img/header_background_mobile.webp);
+    min-height: 283px;
+  }
+
+  header.mobile-header-wrapper div.row {
+    grid-template-columns: 1fr 1fr 1fr 0.6fr;
   }
 
   header.mobile-header-wrapper div.row div.burger-menu-container img {
