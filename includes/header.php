@@ -736,7 +736,6 @@ function buildContent(property) {
 	<?php if(isset($hp)){?>
 	<div class="cover_top">
 		<form name="qSearch" method="get" action="course-weather-search.php">
-		<img src="<?php echo $dirAdj;?>img/golf_weather_dt.webp" class="cover-body" />
 		<div class="cover_child">
 			<span class="cover_head">Where would you like to play?</span><br /><br />
 			<div style="display: inline-block;vertical-align: top"><input name="search_home" class="search_home" id="search_home" placeholder="Find your course" onchange="checkInpSearchHP();" /></div>
